@@ -1,0 +1,274 @@
+article{
+    width: 90%;
+    margin: 0 auto;
+}
+#mainContents{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*Topper*/
+
+#softwareTopper{
+    padding: 30px 0;
+}
+.TopperTitle{
+    width: 500px;
+    font-size: 35px;
+    text-align: left;
+
+    display: inline-block;
+}
+#TopperBtn{
+    width: 250px;
+    height: 50px;
+
+    border: 2px solid #e60012;
+    float: right;
+}
+#TopperBtn p{
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+
+    color: #e60012;
+}
+
+
+/*SoftwareArrays*/
+#softwareArrays, #softwareArrays img{
+    width: 100%;
+}
+.mainSoftware{
+    width: 100%;
+}
+.subSoftware{
+    display: inline-block;
+    width: 49.65%;
+}
+
+/* 언어 정보 */
+#languageInfo{
+    width: 100%;
+    height: 100px;
+    background-color: #eee;
+
+    text-align: center;
+
+    margin-top: 100px;
+
+    overflow: hidden;
+}
+#languageInfo>div{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 35%;
+    height: 70%;
+
+    margin-right: -6px;
+    margin-top: 20px;
+}
+#languageInfo>div p{
+    width: 77%;
+
+    display: inline-block;
+    vertical-align: top;
+
+    text-align: left;
+    font-size: 12px;
+
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#languageInfo>div .languageIcon{
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+
+    border-radius: 10px;
+}
+#languageInfo>div .languageIcon img{
+    width: 100%;
+}
+
+/*뉴스, 소프트웨어 리스트*/
+#softwareArticle, #newsArticle{
+    margin-top: 50px;
+}
+
+.articleTitle{
+    font-size: 25px;
+    padding: 20px 0;
+}
+.articleTitle span{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#newsWrap, #softwareWrap{
+    width: 100%;
+    height: 100%;
+}
+.newNews{
+    width: 23.6%;
+    /*폰모드에서는 한줄 2개씩, oldNews display none*/
+    height: 150%;
+    display: inline-block;
+    vertical-align: top;
+
+    margin-right: 1.2%;
+    margin-bottom: 20px;
+}
+#softwareWrap li:nth-child(4), #softwareWrap li:last-child,
+#newsWrap li:nth-child(4), #newsWrap li:last-child{
+    margin-right: -6px;
+}
+.newsImg, .newsImg img{
+    width: 100%;
+    height: 100%;
+}
+.newsCategory{
+    font-size: 13px;
+    font-weight: 400;
+    color: #fe7c0a;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.newsTitle{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    margin-bottom: 10px;
+}
+.newsDate, .newsCompany{
+    font-size: 12.5px;
+}
+
+#moreSoftwareBtn{
+    width: 100%;
+
+    text-align: center;
+    border: 1px solid #e60012;
+    color: #e60012;
+
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+/* 추가 정보 */
+#moreInfos ul{
+    width: 100%;
+    height: 80px;
+
+    margin: 50px 0;
+}
+#moreInfos ul li{
+    width: 33.1%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -6px;
+    border: 1px solid #ddd;
+    border-bottom: 1.5px solid #555;
+
+    text-align: center;
+}
+.moreWrap{
+    width: 100%;
+    height: 100%;
+}
+.moreWrap>div{
+    display: inline-block;
+    vertical-align: top;
+}
+.moreText{
+    width: 70%;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+#moreInfos ul li:first-child .moreText{
+    margin-top: 30px;
+}
+
+
+
+
+
+.newsImg:hover, .moreWrap:hover, #moreSoftwareBtn{
+    cursor:pointer;
+}
+.newsImg img{
+    transition: 0.3s;
+}
+.newsImg:hover img{
+    transform: scale(1.1);
+}
+/* 타블렛과 휴대폰 공통 */
+@media (max-width:1024px){
+    #languageInfo>div{
+        width: 50%;
+    }
+    #languageInfo>div p{
+        width: 60%;
+        font-size: 10px;
+    }
+    #languageInfo>div .languageIcon{
+        width: 70px;
+        margin-top: 10px;
+    }
+    #languageInfo>div .languageIcon img{
+        width: 80%;
+    }
+
+    #softwareTopper{
+        display: none;
+    }
+
+    #moreInfos ul{
+        height: auto;
+    }
+    #moreInfos ul li{
+        width: 100%;
+    }
+    .moreText{
+        width: 85%;
+        padding: 10px 0;
+    }
+    #moreInfos ul li:first-child .moreText{
+        margin-top: 20px;
+    }
+}
+
+/* 타블렛 only */
+@media (max-width:1024px) and (min-width:768px)
+{
+    .subSoftware{
+        display: inline-block;
+        width: 50%;
+        margin: 5px 0px;
+        margin-right: -6px;
+    }
+} 
+
+/* 휴대폰 only*/
+@media (max-width:768px)
+{
+    .subSoftware{
+        width: 100%;
+    }
+
+    .newNews{
+        width: 48%;
+    }
+}

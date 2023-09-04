@@ -1,0 +1,335 @@
+/* main */
+/* image slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    margin-bottom: 100px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #555;
+}
+.swiper-pagination span{
+    background-color: #555;
+}
+.mobSwiper {
+    display: none;
+}
+
+/*article*/
+section article{
+    margin: 0 auto;
+    width: 90%;
+
+    /*테스트*/
+    /*
+    background-color: #eee;*/
+    margin-bottom: 50px;
+}
+
+.titleSeciton{
+    margin-bottom: 25px;
+}
+.articleTitle{
+    display: inline;
+}
+.articleTitle span{
+    font-size: 15px;
+    font-weight: 200;
+}
+.moreButton{
+    float: right;
+    font-size: 30px;
+    font-weight: 600;
+    color: #e60012;
+}
+
+/* News */
+#newsWrap, #softwareWrap{
+    width: 100%;
+    height: 100%;
+}
+.newNews, #newsWrap .oldNews{
+    width: 23.6%;
+    /*폰모드에서는 한줄 2개씩, oldNews display none*/
+    height: 150%;
+    display: inline-block;
+    vertical-align: top;
+
+    margin-right: 1.2%;
+    margin-bottom: 20px;
+}
+#newsWrap li:nth-child(4), #newsWrap li:last-child,
+#softwareWrap li:nth-child(4), #softwareWrap li:last-child{
+    margin-right: -6px;
+}
+.newsImg, .newsImg img{
+    width: 100%;
+    height: 100%;
+}
+.newsCategory{
+    font-size: 13px;
+    font-weight: 400;
+    color: #fe7c0a;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.newsTitle{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    margin-bottom: 10px;
+}
+.newsDate, .newsSoftware{
+    font-size: 12.5px;
+}
+
+/* 구매 카드 */
+#purchaseLink{
+    width: 100%;
+    height: 120px;
+}
+#purchaseCard{
+    height: 100%;
+
+    background-color: #fe7c0a;
+    color: white;
+
+    text-align: center;
+    font-size: 1.2em;
+}
+#purchaseCard h3{
+    padding-top: 25px;
+}
+
+/* 소프트웨어 */
+/*
+#softwareWrap .newNews{
+    height: 150%;
+}*/
+.softwareSwiper{
+    display: none;
+}
+
+/* 정보 카드 */
+#infoWrap li{
+    width: 30%;
+    height: 130px;
+
+    display: inline-block;
+    vertical-align: top;
+
+    margin-bottom: 20px;
+    margin-right: 4.5%;
+}
+#infoWrap li:nth-child(3), #infoWrap li:last-child{
+    margin-right: -6px;
+}
+
+.cardText{
+    width: 40%;
+    height: 100%;
+
+    background-color: #e60012;
+    color: white;
+
+    font-size: 0.85em;
+    text-align: center;
+    vertical-align: top;
+
+    margin-right: -6px;
+
+    display: inline-block;
+}
+.cardText h3{
+    padding-top: 25%;
+}
+.cardImg{
+    width: 60%;
+    height: 100%;
+    background-color: green;
+
+    display: inline-block;
+}
+.cardImg img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 추가 정보 */
+#moreInfos h2{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+#moreInfos ul{
+    width: 100%;
+    height: 80px;
+}
+#moreInfos ul li{
+    width: 33.1%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -6px;
+    border: 1px solid #ddd;
+    border-bottom: 1.5px solid #555;
+}
+.moreWrap{
+    width: 100%;
+    height: 100%;
+}
+.moreWrap>div{
+    display: inline-block;
+    vertical-align: top;
+}
+.moreIcon{
+    width: 30%;
+    margin-right: -6px;
+    margin-top: 15px;
+}
+.moreText{
+    width: 70%;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+#moreInfos ul li:first-child .moreText{
+    margin-top: 30px;
+}
+.moreIcon img{
+    width: 50px;
+    float: right;
+}
+
+/* 클릭 */
+.newsImg:hover, #purchaseCard:hover, .cardText:hover, .moreWrap:hover{
+    cursor:pointer;
+}
+.newsImg img{
+    transition: 0.3s;
+}
+.newsImg:hover img{
+    transform: scale(1.1);
+}
+
+
+/* 타블렛과 휴대폰 공통 */
+@media (max-width:1024px){
+
+    .newsTitle{
+        font-size: 14px;
+    }
+    .newsDate, .newsSoftware{
+        display: none;
+    }
+    #newsWrap .oldNews{
+        display: none;
+    }
+    .newNews{
+        height: 100%;
+    }
+
+    #purchaseLink{
+        height: 90px;
+    }
+    #purchaseCard{
+        font-size: 1.0em;
+    }
+    #purchaseCard h3{
+        padding-top: 15px;
+    }
+
+    #moreInfos ul{
+        height: auto;
+    }
+    #moreInfos ul li{
+        width: 100%;
+    }
+    .moreIcon img{
+        width: 50px;
+        margin-left: 50px;
+    }
+    .moreIcon{
+        width: 15%;
+        margin-top: 5px;
+    }
+    .moreText{
+        width: 85%;
+        margin-top: 10px;
+    }
+    #moreInfos ul li:first-child .moreText{
+        margin-top: 20px;
+    }
+}
+/* 타블렛 only */
+@media (max-width:1024px) and (min-width:768px)
+{
+
+} 
+/* 휴대폰 only*/
+@media (max-width:768px)
+{
+    /* 이미지 슬라이더, 뉴스, 소프트웨어 */
+    .mobSwiper, .softwareSwiper {
+        display: block;
+    }
+    .pcSwiper, #softwareWrap {
+        display: none;
+    }
+    #newsWrap .newNews{
+        width: 48%;
+    }
+    #softwareWrap{
+        display: none;
+    }
+
+    /*정보카드*/
+    #infoWrap li{
+        width: 100%;
+        height: 150px;
+        margin: 5px 0;
+    }
+    .cardText{
+        width: 60%;
+        font-size: 1.0em;
+    }
+    .cardImg{
+        width: 40%;
+    }
+    .cardText h3{
+        padding-top: 17%;
+    }
+}

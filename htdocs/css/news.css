@@ -1,0 +1,130 @@
+#mainContents{
+    margin-bottom: 100px;
+}
+article{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Toper */
+#newsTopper{
+    width: 100%;
+    
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+#topperTitle{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+
+/* News */
+#newsWrap, #softwareWrap{
+    width: 100%;
+    height: 100%;
+}
+.newNews, #newsWrap .oldNews{
+    width: 23.6%;
+    /*폰모드에서는 한줄 2개씩, oldNews display none*/
+    height: 150%;
+    display: inline-block;
+    vertical-align: top;
+
+    margin-right: 1.2%;
+    margin-bottom: 20px;
+}
+#newsWrap li:nth-child(4), #newsWrap li:nth-child(8),
+#newsWrap li:nth-child(12), #newsWrap li:nth-child(16){
+    margin-right: -6px;
+}
+.newsImg, .newsImg img{
+    width: 100%;
+    height: 100%;
+}
+.newsCategory{
+    font-size: 13px;
+    font-weight: 400;
+    color: #fe7c0a;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.newsTitle{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    margin-bottom: 10px;
+}
+.newsDate, .newsSoftware{
+    font-size: 12.5px;
+}
+
+/*더보기 버튼*/
+#moreBtn{
+    width: 120px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px 0;
+
+    border-radius: 20px;
+    text-align: center;
+    background-color: #e60012;
+    color: white;
+}
+    
+
+.newsImg:hover, #moreBtn:hover{
+    cursor:pointer;
+}
+.newsImg img{
+    transition: 0.3s;
+}
+.newsImg:hover img{
+    transform: scale(1.1);
+}
+
+/* 타블렛과 휴대폰 공통 */
+@media (max-width:1024px){
+    article{
+        width: 90%;
+    }
+    #topperTitle{
+        width: 95%;
+    }
+
+    
+    .newsTitle{
+        font-size: 14px;
+    }
+    .newsDate, .newsSoftware{
+        display: none;
+    }
+    .newNews{
+        height: 100%;
+    }
+}
+
+/* 타블렛 only */
+@media (max-width:1024px) and (min-width:768px)
+{
+
+} 
+
+/* 휴대폰 only*/
+@media (max-width:768px)
+{
+    #newsWrap .newNews{
+        width: 48%;
+    }
+}

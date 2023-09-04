@@ -1,0 +1,133 @@
+#menuList{
+    background-color: #e60012;
+}
+#menuList .menuSection{
+    display: none;
+}
+#menuList #loginSection{
+    display: none;
+}
+#menuList #searchSection{
+    display: none;
+}
+
+#mainContents{
+    background-color: #eee;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+#loginArticle{
+    text-align: center;
+}
+#loginArticle>h2{
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#loginWrap{
+    width: 550px;
+
+    margin: 0 auto;
+    padding-top: 50px;
+    background-color: white;
+
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+#loginWrap2{
+    margin: 0 auto;
+    width: 400px;
+}
+#loginWrap input{
+    width: 100%;
+    height: 45px;
+    
+    border-radius: 5px;
+    border: 3px solid #ddd;
+    background-color: #e8f0fe;
+
+    margin-bottom: 15px;
+}
+#loginForm>a{
+    float: left;
+    color: royalblue;
+    font-size: 0.9em;
+}
+#loginBtn{
+    width: 150px;
+    height: 35px;
+    float: right;
+
+    background-color: #e60012;
+    color: white;
+
+    border-radius: 20px;
+    border: 0;
+}
+#snsLogins{
+    margin-top: 60px;
+    background-color: #eee;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+#snsLogins h4{
+    font-size: 12px;
+    font-weight: 100;
+    padding: 15px 0;
+}
+#snsLogins li{
+    width: 320px;
+    height: 35px;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#snsLogins div{
+    height: 100%;
+    padding-top: 10px;
+    border-radius: 10px;
+
+    font-weight: 200;
+    font-size: 0.9em;
+}
+#facebookLogin{
+    color: white;
+    background-color: #1877f2;
+}
+#googleLogin{
+    background-color: white;
+    border: 1px solid #666;
+}
+#twitterLogin{
+    color: white;
+    background-color: #1da1f2;
+}
+#appleLogin{
+    color: white;
+    background-color: black;
+}
+
+#registerZone{
+    padding: 30px 0;
+}
+#registerZone h3{
+    font-size: 0.9em;
+    font-weight: 200;
+}
+
+
+/* 클릭 */
+#loginBtn:hover, #snsLogins div:hover, #registerBtn:hover{
+    cursor:pointer;
+}
+#registerBtn{
+    width: 150px;
+    height: 35px;
+    border: 1px solid #bbb;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#registerBtn p{
+    padding-top: 6px;
+}

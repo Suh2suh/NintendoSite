@@ -1,0 +1,215 @@
+#subpageTopper{
+    width: 100%;
+    text-align: center;
+
+    border-bottom: 1px solid #eee;
+    margin-bottom: 50px;
+}
+#subpageTitle{
+    margin: 0 auto;
+    width: 400px;
+    /*
+        table: 270~
+        phone: 90%
+    */
+
+    font-size: 35px;
+
+    padding: 20px 0;
+    border-bottom: 5px solid #e60012;
+}
+
+#searchForm{
+    width: 800px;
+    height: 50px;
+
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+    text-align: center;
+
+}
+#searchForm select, #searchForm input[type="submit"]{
+    height: 100%;
+}
+#qnaSearchSelect{
+    width: 20%;
+}
+#qnaSearchZone{
+    width: 65%;
+    height: 90%;
+
+    margin-right: -6px;
+}
+#qnaSearchBtn{
+    width: 12%;
+
+    background-color: #e60012;
+    color: white;
+    border: 0;
+}
+
+/* boardTable */
+#qnaTable{
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+}
+
+#searchResultNum{
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+#searchResultNum span{
+    color: #e60012;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/*realtable*/
+#qnaTable tr{
+    border-bottom: 1px solid #eee;
+}
+
+.boardLine{
+    width: 100%;
+}
+.boardLine tr td{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.boardLine td:nth-child(2){
+    width: 14%;
+    color: #333;
+}
+.boardLine td:last-child{
+    width: 79%;
+}
+
+.boardLine td:first-child div{
+    width: 50px;
+    height: 50px;
+
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 5px;
+    margin: 15px 0;
+}
+.boardLine td:first-child div p{
+    padding-top: 5px;
+}
+.boardLine td:last-child a{
+    color: #333;
+}
+
+/*pagePasser*/
+#pagePasser{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#pagePasser li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/*terms*/
+#nintendoTerms{
+    width: 1100px;
+
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+#nintendoTerms div{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#nintendoTerms span{
+    padding: 0 5px;
+    border-radius: 50%;
+    background-color: #e60012;
+
+    color: white;
+
+    margin-right: 10px;
+}
+
+/*boardButtons*/
+.boardButtons{
+    margin: 0 auto;
+    width: 1100px;
+
+    text-align: right;
+}
+.boardButtons li{
+    display: inline-block;
+}
+.boardButtons button{
+    width: 80px;
+    height: 40px;
+
+    background-color: #e60012;
+    color: white;
+    border: 0;
+}
+
+/* 클릭 */
+#qnaSearchBtn:hover, #askBtn:hover, #nintendoTerms div:hover{
+    cursor:pointer;
+}
+
+
+
+/* 타블렛과 휴대폰 공통 */
+@media (max-width:1024px){
+    #qnaTable, #nintendoTerms, .boardButtons{
+        width: 95%;
+    }
+}
+
+/* 타블렛 only */
+@media (max-width:1024px) and (min-width:768px)
+{
+    #searchForm{
+        width: 600px;
+    }
+} 
+
+/* 휴대폰 only*/
+@media (max-width:768px)
+{
+    .boardLine td:first-child div{
+        width: 30px;
+        height: 30px;
+        
+        font-size: 15px;
+    }
+    .boardLine td{
+        font-size: 14px;
+    }
+    .boardLine td:nth-child(2){
+        width: 23%;
+    }
+    .boardLine td:last-child{
+        width: 70%;
+    }  
+
+    #searchForm{
+        height: 40px;
+        width: 95%;
+    }
+    #qnaSearchSelect{
+        width: 25%;
+    }
+    #qnaSearchZone{
+        width: 60%;
+    }
+}

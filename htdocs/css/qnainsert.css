@@ -1,0 +1,85 @@
+    #subpageTopper{
+        width: 100%;
+        text-align: center;
+
+        border-bottom: 1px solid #eee;
+        margin-bottom: 50px;
+    }
+    #subpageTitle{
+        margin: 0 auto;
+        width: 300px;
+
+        font-size: 35px;
+
+        padding: 20px 0;
+        border-bottom: 5px solid #e60012;
+    }
+
+    #insertForm{
+        width: 800px;
+        background-color: #eee;
+        border-radius: 10px;
+        border: 15px solid #eee;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    #insertTable{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #insertTable td:first-child{
+        width: 10%;
+    }
+
+    #categoryLabel, #titleLabel, #contentLabel{
+        font-size: 13.5px;
+        padding: 15px 0;
+    }
+
+    #categoryInput, #titleInput, #contentInput{
+        border: 1px solid #aaa;
+    }
+    #categoryInput{
+        width: 200px;
+        height: 35px;
+    }
+    #titleInput{
+        width: 500px;
+        height: 35px;
+    }
+
+
+    #submitBtn{
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        height: 40px;
+        background-color: #e60012;
+        color: white;
+        border: 0;
+    }
+
+
+    #submitBtn:hover{
+        cursor:pointer;
+    }
+
+
+
+    /* 타블렛과 휴대폰 공통 */
+    @media (max-width:1024px){
+
+    }
+
+    /* 타블렛 only */
+    @media (max-width:1024px) and (min-width:768px)
+    {
+
+    } 
+
+    /* 휴대폰 only*/
+    @media (max-width:768px)
+    {
+
+    }
